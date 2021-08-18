@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	font-family: "Spartan", sans-serif;
+	background: url(images/bg-pattern-bottom-desktop.svg) no-repeat, url(images/bg-pattern-top-desktop.svg) no-repeat;
+	background-position: bottom center, top center;
+	color: hsl(333, 80%, 67%);
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	cursor: pointer;
+}
+h1 {
+	color: hsl(300, 43%, 22%);
+	font-weight: bold;
+	font-size: 2.6rem;
+}
+h2 {
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+/* ----------------
+    general
+------------------*/
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	width: 90%;
+}
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+ul {
+	list-style: none;
+}
+li {
+	max-width: 100%;
+}
+
+/* ----------------
+    hero main
+------------------*/
+.hero {
+	max-width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5em 2em;
+	margin: auto;
+}
+
+.hero__left {
+	flex: 1 1 50%;
+	padding: 2em;
+	padding-left: 0;
+}
+.hero__left p {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	font-weight: 500;
+	color: hsl(303, 10%, 53%);
+	margin-top: 1em;
+}
+.hero__right {
+	flex: 1 1 50%;
+}
+.hero__right p {
+	color: hsl(300, 43%, 22%);
+	font-weight: 700;
+	margin-left: 3.5em;
+	font-size: 0.75rem;
+}
+.hero__right img {
+	width: 14px;
+	height: 14px;
+	margin-right: 0.5em;
+}
+ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+li {
+	display: flex;
+	max-width: 100%;
+}
+li:nth-child(1) {
+	margin-left: 3em;
+	margin-top: 3em;
+}
+li:nth-child(2) {
+	margin-top: 3em;
+	margin-left: 6em;
+}
+li:nth-child(3) {
+	margin-top: 3em;
+	margin-left: 9em;
+}
+/* ----------------
+    testimonial
+------------------*/
+.hero__testimonial {
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
+}
+/* ----------------
+    tabs
+------------------*/
+
+.tabs__header {
+	background-color: hsl(300, 43%, 22%);
+	color: hsla(300, 24%, 96%, 0.808);
+	font-size: 0.7rem;
+	line-height: 1.7;
+	font-weight: 500;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	margin-right: 2em;
+	padding: 2em;
+}
+.tabs__header img {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.tabs__header ~ .tabs__header {
+	margin-top: 2em;
+}
+.tabs__header ~ .tabs__header ~ .tabs__header {
+	margin-top: 4em;
+}
+.tabs__header h2,
+h3 {
+	font-size: 0.7rem;
+}
+.tabs__profile {
+	display: flex;
+	padding: 1em 0 2em 0;
+}
+.tabs__profile h2 {
+	color: hsla(0, 0%, 100%, 0.884);
+	font-weight: 700;
+}
+.tabs__profile h5 {
+	color: rgba(160, 87, 138, 255);
+	font-weight: 400;
+}
+.tabs__profile div {
+	padding-left: 2em;
+}
